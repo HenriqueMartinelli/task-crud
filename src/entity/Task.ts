@@ -23,6 +23,6 @@ export class Task {
 
     @BeforeInsert()
     setCreatedAt() {
-        this.createdAt = new Date().toISOString();  // Atualiza a data de criação antes de inserir no banco de dados
+        this.createdAt = new Date().toISOString();  
     }
 }

@@ -1,0 +1,24 @@
+# Dependências do Node.js
+node_modules/
+
+# Código compilado
+dist/
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios do IDE/Editor
+.vscode/
+.idea/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.dbd
+
+# Banco de dados SQLite
+database.sqlite

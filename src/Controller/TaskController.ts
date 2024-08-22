@@ -8,12 +8,12 @@ export const getTasks= async (req: Request, res: Response): Promise<Response> =>
 };
 
 export const getTask = async (req: Request, res: Response): Promise<Response> => {
-    const taskId = parseInt(req.params.id, 10); // Converter o id para number
-    const task = await getRepository(Task).findOneBy({ id: taskId }); // Usando findOneBy para buscar por id
+    const taskId = parseInt(req.params.id, 10); 
+    const task = await getRepository(Task).findOneBy({ id: taskId }); 
     if (task) {
         return res.json(task);
     }
-    return res.status(404).json({ message: 'Task not found' }); // Retorna 404 se a tarefa não for encontrada
+    return res.status(404).json({ message: 'Task not found' }); 
 };
 
 export const createTask = async (req: Request, res: Response): Promise<Response> => {

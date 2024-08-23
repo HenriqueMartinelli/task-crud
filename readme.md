@@ -15,7 +15,7 @@ Uma API CRUD simples para gerenciar tarefas, construída com Node.js, Express, T
 - **Express**: Framework web para Node.js.
 - **TypeScript**: Superconjunto de JavaScript com tipagem estática.
 - **SQLite**: Banco de dados leve e autônomo.
-- **Prisma**: ORM moderno e intuitivo para TypeScript e JavaScript, que facilita a interação com o banco de dados.
+- **Prisma**: ORM moderno 
 
 ## Requisitos
 

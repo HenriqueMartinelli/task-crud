@@ -1,6 +1,6 @@
 # Gerenciador de Tarefas
 
-Uma API CRUD simples para gerenciar tarefas, construída com Node.js, Express, TypeScript e SQLite usando TypeORM.
+Uma API CRUD simples para gerenciar tarefas, construída com Node.js, Express, TypeScript e SQLite usando Prisma.
 
 ## Funcionalidades
 
@@ -15,7 +15,7 @@ Uma API CRUD simples para gerenciar tarefas, construída com Node.js, Express, T
 - **Express**: Framework web para Node.js.
 - **TypeScript**: Superconjunto de JavaScript com tipagem estática.
 - **SQLite**: Banco de dados leve e autônomo.
-- **TypeORM**: ORM para TypeScript e JavaScript que suporta vários bancos de dados.
+- **Prisma**: ORM moderno e intuitivo para TypeScript e JavaScript, que facilita a interação com o banco de dados.
 
 ## Requisitos
 
@@ -30,7 +30,25 @@ Uma API CRUD simples para gerenciar tarefas, construída com Node.js, Express, T
    git clone https://github.com/seu-usuario/gerenciador-de-tarefas.git
    cd gerenciador-de-tarefas
 
-2. Rodar
+2. Instale as dependências:
+
+   ```bash
+   npm install
+
+3. Gere Prisma:
+
+   ```bash
+   npx prisma migrate dev --name init
+   npx prisma generate
+
+4. Rodar:
+
    ```bash
    npx tsc -p tsconfig.json
    node dist/index.js
+
+
+
+
+
+

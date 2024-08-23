@@ -22,3 +22,9 @@ Thumbs.dbd
 
 # Banco de dados SQLite
 database.sqlite
+
+# Ignorar arquivos de migração do Prisma (opcional, conforme explicado acima)
+prisma/migrations/
+
+# Não ignore o schema.prisma
+!prisma/schema.prisma

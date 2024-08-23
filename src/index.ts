@@ -1,10 +1,9 @@
-import 'reflect-metadata';
 import express from 'express';
-import { connectDB } from './database/connection';
 import taskRoutes from './routes/taskRoutes';
+import { PrismaClient } from '@prisma/client';
 
+const prisma = new PrismaClient();
 const app = express();
-connectDB();
 
 app.use(express.json());
 app.use("/api", taskRoutes);
